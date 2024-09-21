@@ -1,7 +1,7 @@
 console.log("This is seperate JS File");
 // option 1: directly set on the HTML element
 
-// option 2: onclick make body red
+// option 2: onclick make body red [important we will use this more]
 function makeRed() {
     document.body.style.backgroundColor = 'red';
 }
@@ -33,3 +33,11 @@ greenButton.addEventListener('click', function makeGreen() {
 })
 
 // option 5: we will most use this one.
+document.getElementById('make-goldenrod').addEventListener('click', function () {
+    document.body.style.backgroundColor = 'goldenrod';
+})
+
+// practice task
+document.getElementById('make-light-grey').addEventListener('click', function () {
+    document.body.style.backgroundColor = 'lightgrey';
+})
